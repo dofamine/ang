@@ -1,0 +1,2 @@
+<app-human *ngFor="let h of listHumans;let i = index" [human]="h" [numbers]="i" (add)="active = $event" ></app-human>
+<app-details [human]="active"></app-details>

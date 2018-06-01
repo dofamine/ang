@@ -1,7 +1,3 @@
-<app-human *ngFor="let h of listHumans;let i = index"
-           [human]="h" [numbers]="i"
-           (add)="active = $event"
-            [isActive]="active === h"
-></app-human>
-<app-details *ngIf="active !== null" [human]="active"></app-details>
-<app-form (addHuman)="add($event)"></app-form>
+<app-phone-form (addAction)="update($event)"></app-phone-form>
+<app-list [arr]="phones" (active)="setActive($event)"></app-list>
+<app-more *ngIf="active" [active]="active"></app-more>

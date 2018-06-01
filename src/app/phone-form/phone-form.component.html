@@ -1,0 +1,26 @@
+<button (click)="showForm()">add phone</button>
+<div *ngIf="active">
+  <dl>
+    <dt>
+      <label for="diller"></label>
+    </dt>
+    <dd><input type="text" id="diller" [(ngModel)]="phone.diller"></dd>
+    <dt>
+      <label for="model"></label>
+    </dt>
+    <dd><input type="text" id="model" [(ngModel)]="phone.model"></dd>
+    <dt>
+      <label for="image"></label>
+    </dt>
+    <dd><input type="text" id="image" [(ngModel)]="phone.imageUrl"></dd>
+    <dt>
+      <label for="battery"></label>
+    </dt>
+    <dd><input type="text" id="battery" [(ngModel)]="phone.battery"></dd>
+    <dt>
+      <label for="desc"></label>
+    </dt>
+    <dd><textarea id="desc" [(ngModel)]="phone.description"></textarea></dd>
+    <dd><button (click)="addPhone()">add</button></dd>
+  </dl>
+</div>

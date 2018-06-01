@@ -1,4 +1,4 @@
-<div class="human" (click)="onClick()">
+<div class="human" (click)="onClick()" *ngIf="!isActive">
   <h1>{{human.name}}</h1>
   <h2>{{human.surname}}</h2>
   <h3>{{numbers}}</h3>

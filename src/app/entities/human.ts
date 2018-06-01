@@ -1,8 +1,7 @@
 export class Human {
-    constructor(
-        private _name:string,
-        private _surname:string
-    ){}
+    constructor(private _name: string,
+                private _surname: string) {
+    }
 
     get name(): string {
         return this._name;

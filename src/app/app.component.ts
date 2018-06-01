@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {Human} from "./entities/human";
+import {Human} from './entities/human';
 
 @Component({
     selector: 'app-root',
@@ -7,9 +7,9 @@ import {Human} from "./entities/human";
     styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    public formModel: Human = new Human("", "");
+    public formModel: Human = new Human('', '');
     public output: any;
-    private _active:Human = null
+    private _active: Human = null;
     get active(): Human {
         return this._active;
     }
@@ -19,11 +19,15 @@ export class AppComponent {
     }
 
     public listHumans: Array<Human> = [
-        new Human("Vasu", "pupk"),
-        new Human("Ivan", "baraban")
+        new Human('Vasu', 'pupk'),
+        new Human('Ivan', 'baraban')
     ];
 
     public show(answer) {
         this.output = answer.name;
+    }
+
+    public add(human: Human) {
+        this.listHumans.push(human);
     }
 }

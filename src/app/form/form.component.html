@@ -1,3 +1,8 @@
-<p>
-  form works!
-</p>
+<div>
+  <label for="name">name</label>
+  <input type="text" id="name" [(ngModel)]="currentHuman.name">
+  <label for="sur">surname</label>
+  <input type="text" id="sur" [(ngModel)]="currentHuman.surname">
+  <textarea>{{currentHuman.name}}</textarea>
+  <button (click)="humanAdd()">add</button>
+</div>

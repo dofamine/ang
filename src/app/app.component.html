@@ -1,3 +1,11 @@
-<app-phone-form (addAction)="update($event)"></app-phone-form>
-<app-list [arr]="phones" (active)="setActive($event)"></app-list>
-<app-more *ngIf="active" [active]="active"></app-more>
+<div class="main">
+    <div class="cont">
+        <app-phone-form (addAction)="update($event)"></app-phone-form>
+    </div>
+    <div class="cont list">
+        <app-list [arr]="phones" (active)="setActive($event)"></app-list>
+    </div>
+    <div class="cont">
+        <app-more *ngIf="active" [active]="active"></app-more>
+    </div>
+</div>

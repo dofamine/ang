@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {Phone} from "./entities/phone";
+import {Phone} from './entities/phone';
 
 @Component({
     selector: 'app-root',

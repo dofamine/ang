@@ -1,11 +1,6 @@
-<div class="cont">
-    <div class="container" *ngFor="let phone of phones; let i = index">
-        <div>
-            <div class="img">{{phone.imageUrl}}</div>
-            <div class="img">{{phone.description}}</div>
-            <div class="img">{{phone.battery}}</div>
-            <div class="img">{{phone.model}}</div>
-            <button (click)="show(i)">details</button>
-        </div>
+<div class="container" *ngFor="let phone of phones">
+    <div>
+        <div class="img" [style.backgroundImage]="'url('+ phone.imageUrl +')'"></div>
+        <button (click)="show(phone)">details</button>
     </div>
 </div>

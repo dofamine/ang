@@ -1,4 +1,13 @@
-<h1>{{active.model}}</h1>
-<h1>{{active.battery}}</h1>
-<h1>{{active.description}}</h1>
-<h1>{{active.imageUrl}}</h1>
+<div class="img" [style.backgroundImage]="'url('+active.imageUrl+')'"></div>
+<dl>
+    <dt><h4>diller:</h4></dt>
+    <dd><span>{{active.diller}}</span></dd>
+    <dt><h4>model:</h4></dt>
+    <dd><span>{{active.model}}</span></dd>
+    <dt><h4>battery:</h4></dt>
+    <dd><span>{{active.battery}}</span></dd>
+</dl>
+<div class="desc">
+    <h4>description:</h4>
+    <p>{{active.description}}</p>
+</div>

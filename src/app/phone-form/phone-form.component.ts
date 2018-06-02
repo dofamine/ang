@@ -7,17 +7,11 @@ import {Phone} from '../entities/phone';
     styleUrls: ['./phone-form.component.css']
 })
 export class PhoneFormComponent {
+    @Output('addAction') add = new EventEmitter<Phone>();
     public active = false;
-    public phone: Phone = new Phone();
-    @Output('addAction') add: EventEmitter<Phone> = new EventEmitter<Phone>();
-
-
+    public phone = new Phone();
     public addPhone() {
         this.add.emit(this.phone);
         this.phone = new Phone();
-    }
-
-    public showForm() {
-        this.active = !this.active;
     }
 }

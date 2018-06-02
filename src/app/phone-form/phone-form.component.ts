@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Output} from '@angular/core';
-import {Phone} from "../entities/phone";
+import {Phone} from '../entities/phone';
 
 @Component({
     selector: 'app-phone-form',
@@ -9,10 +9,8 @@ import {Phone} from "../entities/phone";
 export class PhoneFormComponent {
     public active = false;
     public phone: Phone = new Phone();
-    @Output('addAction') add: EventEmitter<phone> = new EventEmitter<phone>();
+    @Output('addAction') add: EventEmitter<Phone> = new EventEmitter<Phone>();
 
-    constructor() {
-    }
 
     public addPhone() {
         this.add.emit(this.phone);

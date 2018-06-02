@@ -1,26 +1,28 @@
-<button (click)="showForm()">add phone</button>
-<div *ngIf="active">
-  <dl>
-    <dt>
-      <label for="diller"></label>
-    </dt>
-    <dd><input type="text" id="diller" [(ngModel)]="phone.diller"></dd>
-    <dt>
-      <label for="model"></label>
-    </dt>
-    <dd><input type="text" id="model" [(ngModel)]="phone.model"></dd>
-    <dt>
-      <label for="image"></label>
-    </dt>
-    <dd><input type="text" id="image" [(ngModel)]="phone.imageUrl"></dd>
-    <dt>
-      <label for="battery"></label>
-    </dt>
-    <dd><input type="text" id="battery" [(ngModel)]="phone.battery"></dd>
-    <dt>
-      <label for="desc"></label>
-    </dt>
-    <dd><textarea id="desc" [(ngModel)]="phone.description"></textarea></dd>
-    <dd><button (click)="addPhone()">add</button></dd>
-  </dl>
+<div class="cont">
+    <button (click)="showForm()" class="show">add phone</button>
+    <div *ngIf="active">
+        <dl>
+            <dt>
+                <label for="diller">Diller</label>
+            </dt>
+            <dd><input type="text" id="diller" [(ngModel)]="phone.diller"></dd>
+            <dt>
+                <label for="model">Model</label>
+            </dt>
+            <dd><input type="text" id="model" [(ngModel)]="phone.model"></dd>
+            <dt>
+                <label for="image">URL Image</label>
+            </dt>
+            <dd><input type="text" id="image" [(ngModel)]="phone.imageUrl"></dd>
+            <dt>
+                <label for="battery">Battery</label>
+            </dt>
+            <dd><input type="text" id="battery" [(ngModel)]="phone.battery"></dd>
+            <dt>
+                <label for="desc">Description</label>
+            </dt>
+            <dd><textarea id="desc" [(ngModel)]="phone.description"></textarea></dd>
+        </dl>
+        <button (click)="addPhone()" class="add">add</button>
+    </div>
 </div>

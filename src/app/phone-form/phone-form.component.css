@@ -1,0 +1,59 @@
+.cont {
+    width: 300px;
+    background: #369;
+    padding: 20px;
+    min-height: 600px;
+    display: inline-block;
+}
+button {
+    background: yellow;
+    border: none;
+    box-shadow: 1px 1px 5px black;
+    padding:20px 0;
+    margin-bottom: 15px;
+}
+button:hover,button:focus{
+    outline: #76a8ff solid 1px;
+}
+button:active{
+    outline: none;
+    box-shadow: 1px 1px 5px black inset;
+}
+.cont .show {
+    width: 100%;
+}
+dl {
+    background: yellow;
+    padding: 20px 15px;
+    font-weight: bold;
+    box-shadow: 1px 1px 5px black;
+    margin-bottom: 15px;
+}
+dl dd{
+    margin-left: 0;
+    padding: 10px 0;
+}
+dl dd input,dl dd textarea {
+    display: inline-block;
+    width: 100%;
+    border-radius: 10px;
+    line-height: 20px;
+    font-size: 18px;
+    padding:5px 10px;
+    box-sizing: border-box;
+    border: none;
+    box-shadow: 1px 1px 5px black;
+}
+dl dd textarea {
+    resize: none;
+    height: 100px;
+}
+button.add {
+    width: 50%;
+    margin-left:50%;
+}
+dl dd input:focus,dl dd input:active,dl dd input:hover,
+dl dd textarea:focus,dl dd textarea:active,dl dd textarea:hover{
+    outline: none;
+    box-shadow: 1px 1px 7px #00357c inset;
+}

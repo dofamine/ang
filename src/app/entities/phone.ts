@@ -1,9 +1,9 @@
 export class Phone {
-    constructor(private _diller: string,
-                private _model: string,
-                private _imageUrl: string,
-                private _battery: string,
-                private _description: string) {
+    constructor(private _diller: string = '',
+                private _model: string = '',
+                private _imageUrl: string = '',
+                private _battery: string = '',
+                private _description: string = '') {
     }
 
     get diller(): string {

@@ -1,5 +1,6 @@
 .img {
     background-size: cover;
+    background-position: center;
     display: inline-block;
     width: 45%;
     height: 100px;

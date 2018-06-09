@@ -1,11 +1,20 @@
 <div class="main">
+    <!--<div class="cont">-->
+        <!--<app-phone-form (addAction)="update($event)"></app-phone-form>-->
+    <!--</div>-->
+    <!--<div class="cont list">-->
+        <!--<app-list [arr]="phones" (active)="setActive($event)"></app-list>-->
+    <!--</div>-->
+    <!--<div class="cont">-->
+        <!--<app-more *ngIf="active" [active]="active"></app-more>-->
+    <!--</div>-->
+    <nav>
+        <ul>
+            <li><a routerLink="/main" routerLinkActive="active">add phone</a></li>
+            <li><a routerLink="/list" routerLinkActive="active">phones list</a></li>
+        </ul>
+    </nav>
     <div class="cont">
-        <app-phone-form (addAction)="update($event)"></app-phone-form>
-    </div>
-    <div class="cont list">
-        <app-list [arr]="phones" (active)="setActive($event)"></app-list>
-    </div>
-    <div class="cont">
-        <app-more *ngIf="active" [active]="active"></app-more>
+        <router-outlet></router-outlet>
     </div>
 </div>

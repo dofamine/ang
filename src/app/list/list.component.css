@@ -11,8 +11,9 @@
     height: 80px;
     margin-bottom: 15px;
 }
-button {
+a {
     background: #369;
+    display: inline-block;
     border: none;
     outline: none;
     box-shadow: 1px 1px 5px black;
@@ -23,9 +24,9 @@ button {
     line-height: 40px;
     border-radius: 15px;
 }
-button:hover,button:focus{
+a:hover,a:focus{
     box-shadow: 0 0 5px 5px #00357c;
 }
-button:active{
+a:active{
     box-shadow: 1px 1px 5px black inset;
 }

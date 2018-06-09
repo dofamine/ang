@@ -1,5 +1,6 @@
-import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {Component} from '@angular/core';
 import {Phone} from '../entities/phone';
+import {DataService} from '../data.service';
 
 @Component({
     selector: 'app-list',
@@ -7,11 +8,9 @@ import {Phone} from '../entities/phone';
     styleUrls: ['./list.component.css']
 })
 export class ListComponent {
-    @Input('arr') phones: Array<Phone>;
-    @Output('active') active: EventEmitter<Phone> = new EventEmitter<Phone>();
-
-    public p = 'https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg';
-    public show(p: Phone) {
-        this.active.emit(p);
+    public phones: Array<Phone>;
+    constructor(private phoneService: DataService) {
+        this.phoneService.getAll().subscribe(response => this.phones = response);
+        // console.log(this.phoneService);
     }
 }

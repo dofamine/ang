@@ -1,6 +1,6 @@
 <div class="container" *ngFor="let phone of phones">
     <div>
         <div class="img" [style.backgroundImage]="'url('+ phone.imageUrl +')'"></div>
-        <button (click)="show(phone)">details</button>
+        <a [routerLink]="['/details',phone.id]">details</a>
     </div>
 </div>

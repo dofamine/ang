@@ -1,5 +1,13 @@
 export class Phone {
-    constructor(private _diller: string = '',
+    get id(): number {
+        return this._id;
+    }
+
+    set id(value: number) {
+        this._id = value;
+    }
+    constructor(private _id: number,
+                private _diller: string = '',
                 private _model: string = '',
                 private _imageUrl: string = '',
                 private _battery: string = '',

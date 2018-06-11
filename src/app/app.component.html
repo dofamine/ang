@@ -9,3 +9,9 @@
         <app-more *ngIf="active" [active]="active"></app-more>
     </div>
 </div>
+<dl>
+    <dt>parent</dt>
+    <dd><input type="text" [(ngModel)]="text"></dd>
+    <dt>another component</dt>
+    <dd><app-test [(text)]="text"></app-test></dd>
+</dl>

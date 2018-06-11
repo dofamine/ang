@@ -8,6 +8,7 @@ import {Phone} from './entities/phone';
 })
 export class AppComponent {
     public phones: Array<Phone> = [];
+    public text: string;
     public active: Phone = null;
 
     public update(item: Phone) {
